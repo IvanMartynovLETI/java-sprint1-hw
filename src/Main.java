@@ -8,7 +8,7 @@ public class Main {
         int userInput = scanner.nextInt();
 
         StepTracker stepTracker = new StepTracker();
-        int monthNumber, dayNumber, stepsNumber2;
+        int monthNumber, dayNumber, stepsNumber;
         while (userInput != 0) {
             if (userInput == 1) {
                 System.out.println("Введите номер месяца (0-11), для которого требуется задать число шагов:");
@@ -22,10 +22,10 @@ public class Main {
                         System.out.println("Номер дня задан неправильно");
                     else {
                         System.out.println("Введите количество шагов:");
-                        stepsNumber2 = scanner.nextInt();
-                        if (stepsNumber2 <= 0)
+                        stepsNumber = scanner.nextInt();
+                        if (stepsNumber <= 0)
                             System.out.println("Количество шагов задано неправильно");
-                        else stepTracker.setStepsPerDay(monthNumber, dayNumber, stepsNumber2);
+                        else stepTracker.setStepsPerDay(monthNumber, dayNumber, stepsNumber);
                     }
                 }
 

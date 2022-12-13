@@ -5,7 +5,7 @@ public class Converter {
         return (double) steps * stepsToKmCoeff;
     }
 
-    public double StepsToKCalories(int steps) {
+    public double stepsToKCalories(int steps) {
         double stepsToKCalCoeff = 0.05;
         return steps * stepsToKCalCoeff;
     }

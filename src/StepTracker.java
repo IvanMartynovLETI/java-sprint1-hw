@@ -52,7 +52,7 @@ public class StepTracker {
     }
 
     public double KCalsBurned(int month) {
-        return new Converter().StepsToKCalories(totalStepsPerMonth(month));
+        return new Converter().stepsToKCalories(totalStepsPerMonth(month));
     }
 
     public int maxSeries(int month) {
